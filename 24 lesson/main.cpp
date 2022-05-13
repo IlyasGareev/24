@@ -85,11 +85,11 @@ public:
 
         m_pQuad = new Mesh();
 
-        if (!m_pQuad->LoadMesh("/Content/quad.obj")) {
+        if (!m_pQuad->LoadMesh("C:/Users/User/Downloads/Content/quad.obj")) {
             return false;
         }
 
-        m_pGroundTex = new Texture(GL_TEXTURE_2D, "/Content/.png");
+        m_pGroundTex = new Texture(GL_TEXTURE_2D, "C:/Users/User/Downloads/Content/test.png");
 
         if (!m_pGroundTex->Load()) {
             return false;
@@ -97,7 +97,7 @@ public:
 
         m_pMesh = new Mesh();
 
-        return m_pMesh->LoadMesh("/Content/phoenix_ugv.md2");
+        return m_pMesh->LoadMesh("C:/Users/User/Downloads/Content/phoenix_ugv.md2");
     }
 
     void Run()
